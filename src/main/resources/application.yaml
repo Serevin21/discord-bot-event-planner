@@ -1,3 +1,5 @@
+discord:
+  token: MTMxNDMzNzkzMTEyMDQ4MDMwOQ.GZ55M6.Kkbdbbu6kFv0EUYlnFm4WkM1_1ZH-_Gl-zaVbw
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/event_planer

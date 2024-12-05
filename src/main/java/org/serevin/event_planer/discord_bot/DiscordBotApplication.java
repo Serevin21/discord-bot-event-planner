@@ -10,4 +10,4 @@ public class DiscordBotApplication {
 		SpringApplication.run(DiscordBotApplication.class, args);
 	}
 
-}
+} // в будущем сделать шедулер который проверяет лишние сервера в дб и удаляет

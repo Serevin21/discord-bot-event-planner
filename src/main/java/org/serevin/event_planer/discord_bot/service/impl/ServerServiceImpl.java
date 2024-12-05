@@ -24,19 +24,31 @@ public class ServerServiceImpl implements ServerService {
 
     @Override
     @Transactional(readOnly = true)
+    public boolean existsById(Long serverId) {
+        return serverRepository.existsById(serverId);
+    }
+    @Override
+    @Transactional(readOnly = true)
+    public Server findById(Long serverId) {
+        return serverRepository.findById(serverId)
+                .orElseThrow(() -> new RuntimeException("Server not found"));
+    }
+
+    @Override
+    @Transactional(readOnly = true)
     public Optional<Server> getServerById(Long serverId) {
         return serverRepository.findById(serverId);
     }
 
     @Override
     @Transactional
-    public Server saveServer(Server server) {
+    public Server save(Server server) {
         return serverRepository.save(server);
     }
 
     @Override
     @Transactional
-    public void deleteServer(Long serverId) {
+    public void deleteById(Long serverId) {
         serverRepository.deleteById(serverId);
     }
 

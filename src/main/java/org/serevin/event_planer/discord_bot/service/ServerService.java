@@ -9,6 +9,8 @@ public interface ServerService {
 
     List<Server> getAllServers();
     Optional<Server> getServerById(Long serverId);
-    Server saveServer(Server server);
-    void deleteServer(Long serverId);
+    boolean existsById(Long serverId);
+    Server findById(Long serverId);
+    Server save(Server server);
+    void deleteById(Long serverId);
 }
