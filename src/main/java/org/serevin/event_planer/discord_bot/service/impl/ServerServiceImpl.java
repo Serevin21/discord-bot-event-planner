@@ -1,12 +1,15 @@
 package org.serevin.event_planer.discord_bot.service.impl;
 
 import lombok.AllArgsConstructor;
+import org.serevin.event_planer.discord_bot.entity.Event;
 import org.serevin.event_planer.discord_bot.entity.Server;
+import org.serevin.event_planer.discord_bot.repository.EventRepository;
 import org.serevin.event_planer.discord_bot.repository.ServerRepository;
 import org.serevin.event_planer.discord_bot.service.ServerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
