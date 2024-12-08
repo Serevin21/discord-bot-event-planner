@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import org.serevin.event_planer.discord_bot.discord.CommandHandler;
 import org.serevin.event_planer.discord_bot.entity.Event;
-import org.serevin.event_planer.discord_bot.entity.Server;
 import org.serevin.event_planer.discord_bot.service.EventService;
 import org.serevin.event_planer.discord_bot.service.ServerService;
 import org.springframework.stereotype.Component;
