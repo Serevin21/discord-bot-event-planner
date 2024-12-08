@@ -1,9 +1,7 @@
 package org.serevin.event_planer.discord_bot.service;
 
-import org.serevin.event_planer.discord_bot.entity.Event;
 import org.serevin.event_planer.discord_bot.entity.Server;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
